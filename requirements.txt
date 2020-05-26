@@ -1,0 +1,17 @@
+ansible==2.9.9
+certifi==2020.4.5.1
+cffi==1.14.0
+chardet==3.0.4
+cryptography==2.9.2
+idna==2.9
+Jinja2==2.11.2
+MarkupSafe==1.1.1
+ntlm-auth==1.4.0
+pycparser==2.20
+pywinrm==0.4.1
+PyYAML==5.3.1
+requests==2.23.0
+requests-ntlm==1.1.0
+six==1.15.0
+urllib3==1.25.9
+xmltodict==0.12.0
