@@ -8,7 +8,7 @@
 $hostname = hostname
 
 # Get the server certificate generated previously
-$serverCert = Get-ChildItem -Path Cert:\CurrentUser\My | Where-Object {$_.DnsNameList -contains $hostname} 
+$serverCert = Get-ChildItem -Path Cert:\LocalMachine\My | Where-Object {$_.DnsNameList -contains $hostname} 
 
 # Find all HTTPS listners
 $httpsListeners = Get-ChildItem -Path WSMan:\localhost\Listener\ | where-object { $_.Keys -match 'Transport=HTTPS' }
