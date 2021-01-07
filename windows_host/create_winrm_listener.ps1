@@ -33,3 +33,6 @@ $null = New-WSManInstance @newWsmanParams
 
 # set to certificate authentication
 winrm set WinRM/Config/Client/Auth '@{Basic="false";Digest="false";Kerberos="false";Negotiate="true";Certificate="true";CredSSP="false"}'
+
+# enable winrm service certificate auth
+Set-Item -Path WSMan:\localhost\Service\Auth\Certificate -Value $true
